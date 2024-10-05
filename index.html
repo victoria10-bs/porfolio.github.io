@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/vs.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">VS</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="Curriculum .jpg" onclick="seleccionar()" target="_blank">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/vik2.png" alt="">
+            </div>
+            <h1>Victoria Schneider</h1>
+            <h2>Desarrollo Web & Marketing Digital</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/victoria.schneider.7165/?locale=es_LA"target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/vikkk_10" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/victoriaschneider10/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/victoria-schneider-62ba64319/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/victoria10-bs" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Victoria Schneider.</span> Soy una persona ordenada, detallista y paciente, con habilidades para resolver problemas de manera efectiva. Soy metódica pero también flexible, capaz de adaptarme a diferentes entornos y trabajar en múltiples tareas simultáneamente.
+                Mi objetivo principal es garantizar la calidad en todo lo que hago, y me esfuerzo por reflejar este compromiso en cada proyecto.
+                Disfruto colaborando en equipos, donde puedo aportar mis habilidades y aprender de otros. Estoy constantemente buscando oportunidades para capacitarme y mantenerme actualizada, especialmente en el uso de nuevas herramientas y plataformas</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <!--<li>
+                            
+                            <strong>Cumpleaños</strong>
+                            15-01-1980
+                        </li>-->
+                        <li>
+                            <strong>Teléfono</strong>
+                            345 448 5919
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            victoriaschneider050@gmail.com
+                        </li>
+                        <!--<li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>-->
+                        <li>
+                            <strong>Dirección</strong>
+                            Entre Ríos, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Librerias</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>Seaborn</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>Bokeh</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>Geoplotlib</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>Lattice</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>Leaflet</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>Esquisse</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>Chart.js</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h1>Habilidades</h1>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <div class="skill">
+                        <span>Html</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Css</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Php</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TypeScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ruby</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C ++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <!-- <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/banner.jpg" alt="">
+                    <div class="overlay">
+                        <button><a href="https://victoria10-bs.github.io/instagram.github.io/" target="_blank"><h3>Instagram</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img  src="img/spotify.png" alt="">
+                    <div class="overlay">
+                        <button><a href="https://victoria10-bs.github.io/spotify.github.io/" target="_blank"><h3>Spotify</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/whats2.png" alt="">
+                    <div class="overlay">
+                    <button><a href="https://victoria10-bs.github.io/whatsapp.github.io/" target="_blank"><h3>WhastApp</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/hambur.png" alt="">
+                    <div class="overlay">
+                        <button><a href="https://victoria10-bs.github.io/comida.github.io/" target="_blank"><h3>Comida</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/cafe.png" alt="">
+                    <div class="overlay">
+                    <button><a href="https://victoria10-bs.github.io/cafe.github.io/" target="_blank"><h3>Café</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/resto-itali.png" alt="">
+                    <div class="overlay">
+                        <button><a href="https://victoria10-bs.github.io/resto-itali.github.io/" target="_blank"><h3>Restaurante italiano</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/sis-solar.png" alt="">
+                    <div class="overlay">
+                        <button><a href="https://victoria10-bs.github.io/sistemasolar.github.io/" target="_blank"><h3>Sistema Solar</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img  src="img/meteorologo.png" alt="">
+                    <div class="overlay">
+                        <button><a href="https://victoria10-bs.github.io/clima.github.io/" target="_blank"><h3>El clima</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/cifracesar2.png" alt="">
+                    <div class="overlay">
+                    <button><a href="https://victoria10-bs.github.io/cifradocesar.github.io/" target="_blank"><h3>Cifrado César</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ahorado.png" alt="">
+                    <div class="overlay">
+                        <button><a href="https://victoria10-bs.github.io/ahorcado.github-io/" target="_blank"><h3>Ahorcado</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/simondice6.png" alt="">
+                    <div class="overlay">
+                        <button><a href="https://victoria10-bs.github.io/simon-dice.github.io/" target="_blank"><h3>Simon dice</h3></a></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/snake3-png.avif" alt="">
+                    <div class="overlay">
+                    <button><a href="https://victoria10-bs.github.io/snake.github.io/" target="_blank"><h3>Snake</h3></a></button>
+                    </div>
+                    </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <form action="https://formsubmit.co/victoriaschneider050@gmail.com" method="post">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input name="name" type="text" placeholder="Tú Nombre">
+                    <input name="name" type="text" placeholder="Número telefónico">
+                    <input name="email" type="text" placeholder="Dirección de correo">
+                    <input name="subject"  type="text" placeholder="Tema">
+                    <textarea name="name" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit" value="enviar">Enviar mensaje</button>
+                </div>
+                </div>
+                </div>
+                </form>
+                </section>
+                                <!-- Mapa -->
+                <!--<div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/victoria.schneider.7165/?locale=es_LA"target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/vikkk_10" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/victoriaschneider10/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/victoria-schneider-62ba64319/"target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/victoria10-bs" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
